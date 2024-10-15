@@ -236,45 +236,55 @@ nav .container .language {
 .main-page .slogan-section .BG-shape {
   position: relative;
   top: -330px;
-  right: 430px;
+  right: 365px;
   transform: rotate(-39deg);
   width: 450px;
-  height: 1060px;
+  height: 1100px;
   background-color: var(--yellow-color);
 }
 @media (max-width: 1750px) {
   .main-page .slogan-section .BG-shape {
-    right: 330px;
+    right: 250px;
   }
 }
 @media (max-width: 1650px) {
   .main-page .slogan-section .BG-shape {
-    right: 280px;
+    right: 200px;
   }
 }
 @media (max-width: 1550px) {
   .main-page .slogan-section .BG-shape {
-    right: 210px;
+    right: 155px;
   }
 }
 @media (max-width: 1400px) {
   .main-page .slogan-section .BG-shape {
-    right: 150px;
+    right: 80px;
   }
 }
 @media (max-width: 1300px) {
   .main-page .slogan-section .BG-shape {
-    right: 85px;
+    right: 25px;
   }
 }
 @media (max-width: 1200px) {
   .main-page .slogan-section .BG-shape {
-    right: 130px;
+    right: 75px;
+  }
+}
+@media (max-width: 1100px) {
+  .main-page .slogan-section .BG-shape {
+    right: 10px;
   }
 }
 @media (max-width: 992px) {
   .main-page .slogan-section .BG-shape {
-    right: 90px;
+    right: 70px;
+  }
+}
+@media (max-width: 892px) {
+  .main-page .slogan-section .BG-shape {
+    right: 0;
   }
 }
 @media (max-width: 768px) {
@@ -313,9 +323,14 @@ nav .container .language {
 /* start container of slogan section */
 .main-page .slogan-section .container {
   position: relative;
-  bottom: 900px;
+  bottom: 985px;
   color: var(--blue-color);
   z-index: 3;
+}
+@media (max-width: 576px) {
+  .main-page .slogan-section .container {
+    bottom: 870px;
+  }
 }
 .main-page .slogan-section .container .slogan-title {
   font-family: TS Kufidia;
@@ -328,6 +343,7 @@ nav .container .language {
     font-size: 40px;
   }
 }
+
 @media (max-width: 576px) {
   .main-page .slogan-section .container .slogan-title {
     font-size: 30px;
