@@ -263,9 +263,29 @@ nav .container .language {
   height: 1175px;
   background-color: var(--yellow-color);
 }
+@media (max-width: 1700px) {
+  .main-page .slogan-section .container .BG-shape {
+    right: 210px;
+  }
+}
+@media (max-width: 1400px) {
+  .main-page .slogan-section .container .BG-shape {
+    right: 80px;
+  }
+}
 @media (max-width: 1200px) {
   .main-page .slogan-section .container .BG-shape {
-    right: 150px;
+    right: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .main-page .slogan-section .container .BG-shape {
+    right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .main-page .slogan-section .container .BG-shape {
+    right: 20px;
   }
 }
 .main-page .slogan-section .BG-shape::before {
@@ -299,6 +319,11 @@ nav .container .language {
   gap: 30px;
 }
 
+@media (max-width: 576px) {
+  .main-page .slogan-section .container .BG-shape .inner-content {
+    width: 100%;
+  }
+}
 .main-page .slogan-section .container .BG-shape .inner-content .slogan-title {
   font-family: TS Kufidia;
   font-size: 48px;
