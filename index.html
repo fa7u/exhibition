@@ -15,6 +15,8 @@
 
     <!--for the icon -->
     <link rel="icon" href="assets/logo-part.svg" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -47,15 +49,43 @@
     <div class="main-page">
       <!-- start slogan section -->
       <section class="slogan-section section-settings">
-        <div class="BG-shape"></div>
         <div class="container section-container-settings">
-          <p class="slogan-title">مهرجان الشعوب والتراث الدولي</p>
-          <p class="slogan">(يتم هنا كتابة السلوجن)</p>
-          <div class="buttons-cont">
-            <a href="#" class="know-more-BT BT-settings"
-              >تعرف أكثر على المهرجان</a
-            >
-            <a href="#" class="contact-BT BT-settings">تواصل معنا</a>
+          <div class="BG-shape">
+            <div class="inner-content">
+              <p
+                class="slogan-title"
+                data-aos="fade-up"
+                data-aos-duration="2500"
+              >
+                مهرجان الشعوب والتراث الدولي
+              </p>
+              <p
+                class="slogan"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+              >
+                (يتم هنا كتابة السلوجن)
+              </p>
+              <div class="buttons-cont">
+                <a
+                  href="#"
+                  class="know-more-BT BT-settings"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  >تعرف أكثر على المهرجان</a
+                >
+                <a
+                  href="#"
+                  class="contact-BT BT-settings"
+                  data-aos="fade-up"
+                  data-aos-duration="00"
+                  data-aos-delay="800"
+                  >تواصل معنا</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -66,16 +96,33 @@
         <div class="container section-container-settings">
           <div class="description-shapes">
             <div class="upper">
-              <div class="flower-shape shape-settings"></div>
-              <div class="rectangles-shape shape-settings"></div>
+              <div
+                class="flower-shape shape-settings"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              ></div>
+              <div
+                class="rectangles-shape shape-settings"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              ></div>
             </div>
-            <div class="squares-shape shape-settings"></div>
+            <div
+              class="squares-shape shape-settings"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1500"
+            ></div>
           </div>
-          <p class="desc-title">فقدان التراث يعني فقدان الذاكرة</p>
-          <p class="desc">
+          <p class="desc-title" data-aos="fade-up" data-aos-duration="2000">
+            فقدان التراث يعني فقدان الذاكرة
+          </p>
+          <p class="desc" data-aos="zoom-in-up" data-aos-duration="3000">
             تمتد حكايات الشعوب عبر التاريخ, لتلتقي بأصالة الأفكار وتتكون
             الموروثات التي تفتخر بها الدول وتعتز بها الأمم. وجاء مهرجان التراث
-            والشعوب,  حتى يكون جسراً للتواصل بين الشعوب والثقافات، ولجعل التراث
+            والشعوب, حتى يكون جسراً للتواصل بين الشعوب والثقافات، ولجعل التراث
             يبقى في الذاكرة وينغرس في الروح ولنتعرف على قصص الشعوب وتراثهم
             الأصيل لنستكشف الجذور العميقة ونحيي التقاليد الأصيلة.
           </p>
@@ -85,10 +132,16 @@
 
       <!-- start about section -->
       <section class="about-section section-settings">
-        <div class="circular-shape"></div>
+        <div
+          class="circular-shape"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+        ></div>
         <div class="container section-container-settings">
-          <p class="about-title">عن مهرجان الشعوب والتراث</p>
-          <p class="about">
+          <p class="about-title" data-aos="fade-up" data-aos-duration="2000">
+            عن مهرجان الشعوب والتراث
+          </p>
+          <p class="about" data-aos="zoom-in-up" data-aos-duration="3000">
             يعد مهرجان التراث والشعوب معرضًا يهتم بنقل ثقافات الوطن بالإضافة إلى
             ثقافات وتراث الشعوب الأخرى مما يساهم في تعزيز الحوار الثقافي وبناء
             جسور التواصل بين الأمم, ولتصبح منصة لعرض التنوع الثقافي والإبداعي
@@ -118,5 +171,13 @@
     <footer>
       <div class="container"></div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      window.addEventListener("scroll", () => {
+        AOS.refresh();
+      });
+    </script>
   </body>
 </html>
