@@ -288,6 +288,11 @@ nav .container .language {
     right: 20px;
   }
 }
+@media (max-width: 576px) {
+  .main-page .slogan-section .container .BG-shape {
+    right: -35px;
+  }
+}
 .main-page .slogan-section .BG-shape::before {
   content: "";
   position: absolute;
