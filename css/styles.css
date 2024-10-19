@@ -1402,16 +1402,6 @@ nav .container .language {
     min-height: 155px;
   }
 }
-@media (max-width: 992px) {
-  .main-page
-    .display-heritage-section
-    .container
-    .display-heritage
-    .display-heritage-title-square {
-    min-width: 130px;
-    min-height: 130px;
-  }
-}
 
 .main-page
   .display-heritage-section
