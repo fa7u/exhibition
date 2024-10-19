@@ -613,20 +613,20 @@ nav .container .language {
 }
 
 .shape-settings {
-  min-width: 220px;
+  min-width: 230px;
   min-height: 220px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 @media (max-width: 768px) {
   .shape-settings {
-    min-width: 200px;
+    min-width: 210px;
     min-height: 200px;
   }
 }
 @media (max-width: 576px) {
   .shape-settings {
-    min-width: 148px;
+    min-width: 158px;
     min-height: 148px;
   }
 }
@@ -641,17 +641,17 @@ nav .container .language {
 .main-page .description-section .squares-shape {
   background-image: url(../assets/squares-shape.svg);
   position: relative;
-  top: -110px;
+  top: -115px;
 }
 @media (max-width: 768px) {
   .main-page .description-section .squares-shape {
-    top: -100px;
+    top: -105px;
     left: 2px;
   }
 }
 @media (max-width: 576px) {
   .main-page .description-section .squares-shape {
-    top: -75px;
+    top: -80px;
     left: -15px;
   }
 }
