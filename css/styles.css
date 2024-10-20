@@ -135,7 +135,6 @@ ul {
 @media (max-width: 768px) {
   .sections-description {
     width: 90%;
-    margin-bottom: 40px;
   }
 }
 @media (max-width: 576px) {
@@ -621,6 +620,8 @@ nav .container .language {
   animation-name: shape-anim;
   animation-duration: 0.6s;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @media (max-width: 768px) {
   .shape-settings {
@@ -664,19 +665,12 @@ nav .container .language {
 }
 
 @keyframes shape-anim {
-  0% {
+  from {
     transform: scale(0);
     opacity: 0;
   }
-  25% {
-    transform: scale(0.25);
-    opacity: 0.25;
-  }
-  50% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-  100% {
+
+  to {
     transform: scale(1);
     opacity: 1;
   }
@@ -730,7 +724,7 @@ nav .container .language {
   top: 72px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main-page .about-section .container .about-shapes {
     top: 35px;
   }
@@ -742,33 +736,33 @@ nav .container .language {
 }
 @media (max-width: 768px) {
   .main-page .about-section .container .about-shapes {
-    top: -20px;
+    top: 20px;
   }
 }
-
 @media (max-width: 650px) {
   .main-page .about-section .container .about-shapes {
-    top: -60px;
+    top: -20px;
   }
 }
 @media (max-width: 576px) {
   .main-page .about-section .container .about-shapes {
-    top: 65px;
+    top: 105px;
   }
 }
 @media (max-width: 528px) {
   .main-page .about-section .container .about-shapes {
-    top: 35px;
+    top: 75px;
   }
 }
 @media (max-width: 424px) {
   .main-page .about-section .container .about-shapes {
-    top: 5px;
+    top: 45px;
   }
 }
+
 @media (max-width: 357px) {
   .main-page .about-section .container .about-shapes {
-    top: -25px;
+    top: 15px;
   }
 }
 @media (max-width: 316px) {
