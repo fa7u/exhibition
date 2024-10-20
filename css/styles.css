@@ -91,17 +91,6 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding-inline-start: 80px;
-}
-@media (max-width: 1200px) {
-  .section-container-settings {
-    padding-inline-start: 60px;
-  }
-}
-@media (max-width: 992px) {
-  .section-container-settings {
-    padding-inline-start: 40px;
-  }
 }
 
 /* sections-title (title of all sections) */
@@ -335,7 +324,11 @@ nav .container .language {
   overflow: hidden;
   height: 538px;
 }
-
+@media (max-width: 576px) {
+  .main-page .slogan-section {
+    height: 500px;
+  }
+}
 /* start container of slogan section */
 .main-page .slogan-section .container {
   position: static;
@@ -423,7 +416,14 @@ nav .container .language {
 
 @media (max-width: 576px) {
   .main-page .slogan-section .container .BG-shape .inner-content {
-    top: 365px;
+    top: 345px;
+    right: 125px;
+    align-items: center;
+  }
+}
+@media (max-width: 460px) {
+  .main-page .slogan-section .container .BG-shape .inner-content {
+    top: 375px;
     right: 80px;
     align-items: center;
   }
@@ -576,6 +576,7 @@ nav .container .language {
 }
 
 /* start corner shapes */
+
 .main-page .description-section .description-shapes {
   display: flex;
   flex-direction: column;
@@ -617,6 +618,9 @@ nav .container .language {
   min-height: 220px;
   background-repeat: no-repeat;
   background-size: contain;
+  animation-name: shape-anim;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
 }
 @media (max-width: 768px) {
   .shape-settings {
@@ -633,15 +637,18 @@ nav .container .language {
 
 .main-page .description-section .upper .flower-shape {
   background-image: url(../assets/flower-shape.svg);
+  animation-delay: 900ms;
 }
 .main-page .description-section .upper .rectangles-shape {
   background-image: url(../assets/rectangles-shape.svg);
   z-index: -1;
+  animation-delay: 200ms;
 }
 .main-page .description-section .squares-shape {
   background-image: url(../assets/squares-shape.svg);
   position: relative;
   top: -115px;
+  animation-delay: 500ms;
 }
 @media (max-width: 768px) {
   .main-page .description-section .squares-shape {
@@ -656,6 +663,24 @@ nav .container .language {
   }
 }
 
+@keyframes shape-anim {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.25);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* end description section */
 
 /* ########################################################################################### */
@@ -665,14 +690,9 @@ nav .container .language {
   background-color: var(--blue-color);
   height: 350px;
 }
-@media (max-width: 560px) {
+@media (max-width: 576px) {
   .main-page .about-section {
     height: 420px;
-  }
-}
-@media (min-width: 561px) and (max-width: 685px) {
-  .main-page .about-section {
-    height: 390px;
   }
 }
 
@@ -694,6 +714,7 @@ nav .container .language {
   }
 }
 
+/* title */
 @media (max-width: 576px) {
   .main-page .about-section .container .about-title {
     margin-top: 25px;
@@ -706,9 +727,14 @@ nav .container .language {
 
 .main-page .about-section .container .about-shapes {
   position: relative;
-  top: 35px;
+  top: 72px;
 }
 
+@media (max-width: 1200px) {
+  .main-page .about-section .container .about-shapes {
+    top: 35px;
+  }
+}
 @media (max-width: 992px) {
   .main-page .about-section .container .about-shapes {
     top: 0px;
@@ -719,38 +745,39 @@ nav .container .language {
     top: -20px;
   }
 }
-@media (min-width: 676px) and (max-width: 685px) {
+
+@media (max-width: 650px) {
   .main-page .about-section .container .about-shapes {
-    top: 20px;
+    top: -60px;
   }
 }
-
 @media (max-width: 576px) {
+  .main-page .about-section .container .about-shapes {
+    top: 65px;
+  }
+}
+@media (max-width: 528px) {
   .main-page .about-section .container .about-shapes {
     top: 35px;
   }
 }
-@media (min-width: 559px) and (max-width: 561px) {
-  .main-page .about-section .container .about-shapes {
-    top: -35px;
-  }
-}
-
-@media (max-width: 451px) {
+@media (max-width: 424px) {
   .main-page .about-section .container .about-shapes {
     top: 5px;
   }
 }
-@media (max-width: 385px) {
+@media (max-width: 357px) {
   .main-page .about-section .container .about-shapes {
     top: -25px;
   }
 }
-@media (max-width: 345px) {
+@media (max-width: 316px) {
   .main-page .about-section .container .about-shapes {
     display: none;
   }
 }
+
+/* img */
 @media (max-width: 576px) {
   .main-page .about-section .container .about-shapes img {
     width: 42px;
@@ -912,7 +939,6 @@ nav .container .language {
   .fest-goals-images:hover
   > :not(:hover) {
   transform: scale(0.9);
-  filter: blur(1.5px);
 }
 
 .main-page .fest-goals-section .container .fest-goals-images .image-title {
@@ -1175,6 +1201,11 @@ nav .container .language {
     top: 75px;
   }
 }
+@media (max-width: 320px) {
+  .main-page .features-section .container .features-shapes {
+    display: none;
+  }
+}
 
 @media (max-width: 576px) {
   .main-page .features-section .container .features-shapes img {
@@ -1237,12 +1268,15 @@ nav .container .language {
   border-radius: 8px;
   transition-duration: 0.5s;
 }
+
 .main-page .corners-section .container .corners .corner-sq:hover {
-  transform: scale(1.09);
+  transform: scale(1.04);
+  transition-delay: 0s;
 }
+
 @media (max-width: 576px) {
   .main-page .corners-section .container .corners .corner-sq:hover {
-    transform: scale(0.9);
+    transform: scale(0.93);
   }
 }
 
@@ -1364,7 +1398,7 @@ nav .container .language {
   align-items: center;
   gap: 50px;
   margin: 40px 0;
-  width: 100%;
+  width: 90%;
 }
 @media (max-width: 1200px) {
   .main-page .display-heritage-section .container .display-heritage {
@@ -1410,11 +1444,22 @@ nav .container .language {
   .display-heritage-title-square
   .display-heritage-title {
   font-family: TS Kufidia;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 400;
-  line-height: 38.4px;
+  line-height: 50.4px;
   text-align: center;
   transform: rotate(-45deg);
+  width: 85%;
+}
+@media (max-width: 576px) {
+  .main-page
+    .display-heritage-section
+    .container
+    .display-heritage
+    .display-heritage-title-square
+    .display-heritage-title {
+    font-size: 32px;
+  }
 }
 
 .main-page
